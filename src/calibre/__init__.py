@@ -126,7 +126,7 @@ def confirm_config_name(name):
 
 
 _filename_sanitize_unicode = frozenset(('\\', '|', '?', '*', '<',        # no2to3
-    '"', ':', '>', '+', '/') + tuple(map(codepoint_to_chr, range(32))))  # no2to3
+    '"', ':', '>', '/') + tuple(map(codepoint_to_chr, range(32))))  # no2to3
 
 
 def sanitize_file_name(name, substitute='_'):
